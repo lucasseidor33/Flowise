@@ -56,7 +56,7 @@ const AboutDialog = ({ show, onCancel }) => {
             aria-describedby='alert-dialog-description'
         >
             <DialogTitle sx={{ fontSize: '1rem' }} id='alert-dialog-title'>
-                Flowise Version
+                Daiana Studio Version
             </DialogTitle>
             <DialogContent>
                 {data && (
@@ -65,20 +65,20 @@ const AboutDialog = ({ show, onCancel }) => {
                             <TableHead>
                                 <TableRow>
                                     <TableCell>Current Version</TableCell>
-                                    <TableCell>Latest Version</TableCell>
+                                    {/* <TableCell>Latest Version</TableCell> */}
                                     <TableCell>Published At</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
                                 <TableRow sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                     <TableCell component='th' scope='row'>
-                                        {data.currentVersion}
+                                        1.0.0
                                     </TableCell>
-                                    <TableCell component='th' scope='row'>
+                                    {/* <TableCell component='th' scope='row'>
                                         <a target='_blank' rel='noreferrer' href={data.html_url}>
-                                            {data.name}
+                                        DaianaFlow@2.2.5
                                         </a>
-                                    </TableCell>
+                                    </TableCell> */}
                                     <TableCell>{moment(data.published_at).fromNow()}</TableCell>
                                 </TableRow>
                             </TableBody>
